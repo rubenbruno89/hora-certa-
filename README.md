@@ -1,2 +1,4 @@
-# hora-certa-
-Atualiza a hora do host
+# Hora-Certa-
+Atualiza a hora do host 
+
+Este é um script em lote que configura o cliente NTP (Network Time Protocol) do Windows para sincronizar com o servidor a.st1.ntp.br. Ele desativa a exibição de comandos no prompt de comando, limpa a tela e usa o comando time para configurar o servidor NTP. O parâmetro /manualpeerlist especifica o endereço do servidor e o 0x8 indica que ele deve ser usado como fonte primária de tempo. O parâmetro /syncfromflags:MANUAL indica que a sincronização deve ser feita manualmente. Em seguida, o comando w32tm é usado para ressincronizar o relógio do sistema com o servidor NTP configurado. O parâmetro /t especifica que a hora deve ser exibida na saída do comando. O script pausa a execução até que o usuário pressione uma tecla e, em seguida, encerra a execução com o comando exit.
